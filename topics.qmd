@@ -1,0 +1,28 @@
+---
+title: "Topics"
+bibliography: workshop.bib
+---
+
+This website is for participants in the nonparametric workshop being held August 14-18, 2023, at the University of Pretoria, South Africa. Material will be based mostly on @racine_2019. The workshop will be run by Professor Jeffrey S. Racine who currently works at McMaster University in Hamilton, Ontario, Canada.
+
+- Day 1
+
+  - AM Introduction to R, data types, parametric and nonparametric kernel density estimation
+  - PM Hands on lab, R and exercises
+
+- Day 2
+
+  - AM Introduction nonparametric kernel regression, estimation, inference, interpretation
+  - PM Hands on lab, R and exercises
+
+- Day 3
+
+  - AM Introduction to univariate kernel time-series methods, kernel fixed effect panel data methods, forecasting
+  - PM Hands on lab, R and exercises
+
+- Day 4
+
+  - AM Introduction to semiparametric kernel methods, new tools for reproducible research
+  - PM Hands on lab, R and exercises
+
+

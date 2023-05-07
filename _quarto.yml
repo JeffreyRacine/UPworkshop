@@ -9,7 +9,8 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Information
+      - topics.qmd
       - about.qmd
     logo: avatar.png
     tools:
