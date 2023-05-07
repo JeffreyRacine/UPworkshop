@@ -4,7 +4,7 @@ project:
 
 website:
   title: "University of Pretoria Workshop"
-  repo-url: https://github.com/JeffreyRacine/UPwebsite
+  repo-url: https://github.com/JeffreyRacine/UPworkshop
   repo-actions: [edit, issue]
   navbar:
     left:
@@ -17,9 +17,9 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            url:  https://github.com/JeffreyRacine/UPwebsite
+            url:  https://github.com/JeffreyRacine/UPworkshop
           - text: Report a Bug
-            url:  https://github.com/JeffreyRacine/UPwebsite/issues
+            url:  https://github.com/JeffreyRacine/UPworkshop/issues
     
 format:
   html:
