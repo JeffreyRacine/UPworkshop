@@ -1,0 +1,71 @@
+---
+title: |
+    | Nonparametric Workshop in R
+    | University of Pretoria, South Africa, August 14-18, 2023
+title-block-banner: true
+bibliography: workshop.bib
+---
+
+# Overview
+
+In this workshop you will be guided through the application of basic nonparametric kernel methods using R (e.g., kernel regression), and you will also be introduced to recently released tools for conducting reproducible research (Quarto).
+
+No background knowledge of either nonparametric analysis or the R programming language will be assumed.
+
+The nonparametric methods used in this workshop will be based on @racine_2019.
+
+Though the workshop will introduce you to the R programming language (<a href="https://www.r-project.org/about.html">What is R?</a>) for conducting nonparametric kernel analysis (<a href="https://en.wikipedia.org/wiki/Kernel_regression">What is Kernel Regression?</a>), we will also be using Quarto (<a href="https://quarto.org">What is Quarto?</a>) and RStudio (<a href="https://posit.co/products/open-source/rstudio/">What is RStudio?</a>) which, combined, form an extremely powerful framework for streamlining a range of tasks (in fact, this website was created using Quarto and RStudio and is hosted on <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages</a>). All of the software we use is available for free and is open source.
+
+# Pre-Workshop Tasks
+
+Participants are encouraged, if possible, to bring a laptop with them pre-loaded with the free and open source software listed below (even though desktop computers will be available for use in the workshop). Doing so will *guarantee* that you will leave the workshop fully equipped to conduct your own analysis using the methods that we will cover. Installation instructions follow, and please pay particular attention to the issues highlighted below.
+
+::: callout-important
+-   Quarto was recently released, has evolved rapidly, and is now quite stable (Version 1.0 was released publicly July 28 2022 - see <a href="https://posit.co/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system">Quarto Announcement</a>)
+
+-   However, *older versions of RStudio do not support Quarto* (only RStudio v2022. 07.1 and later includes support for editing and preview of Quarto documents)
+
+-   Therefore, it is *strongly* advised that, even if you have versions of R and RStudio already installed on your system, you *install the most recent versions* for this workshop
+:::
+
+Workshop participants should come with the following applications (i.e., R, RStudio, and $\rm\TeX$) and R libraries (i.e., the R package `np`) pre-installed on your laptop computer:
+
+1.  R and RStudio (see <a href="https://posit.co/download/rstudio-desktop">posit.co/download/rstudio-desktop</a>)
+
+    ::: callout-important
+    -   You *must* install R before installing RStudio (otherwise RStudio will not function, so the order of installation is critical)
+
+    -   If you are using macOS (i.e., an Apple laptop), when you run the RStudio installer you need to *manually* copy/drag the RStudio app to the Applications folder
+    :::
+
+2.  $\rm\TeX$ (Windows users see <a href="https://miktex.org">miktex.org</a>, macOS users see <a href="https://www.tug.org/mactex">www.tug.org/mactex</a>, Linux/UNIX users see <a href="https://www.tug.org/texlive">www.tug.org/texlive</a>)
+
+3.  The R package `np` (see installation instructions in Item 2. below, further details to appease your inner geek can be found on CRAN <a href="https://CRAN.R-project.org/package=np">CRAN.R-project.org/package=np</a>)
+
+## Test Your Installation
+
+To test whether or not your install of the above is working prior to the workshop, you might try the following:
+
+1.  Download the files `workshop.qmd` and `workshop.bib` contained in the zip file `workshop.zip` (see the download link below), place them in a folder, open the file `workshop.qmd` *using the latest version of* RStudio, make sure your working directory is set to the source file location (in RStudio, look for the menus at the top of the screen, then select `"Session"` -\> `"Set Working Directory"` -\> `"To Source File Location"`)
+
+    ::: {.callout appearance="minimal"}
+    <i class="bi bi-download"></i> [Download workshop.zip](www/workshop.zip){download="workshop.zip"}
+    :::
+
+2.  Install the `np` package (*using the latest version of* RStudio select the `"Packages"` tab, lower right pane by default, click the `"install"` icon, enter `np` in the `"Packages"` field, the click `"Install"`)
+
+3.  In the editor pane (upper left pane by default which opens when you opened the file workshop.qmd) click the `"Render"` icon
+
+If *the latest versions of* RStudio, R, $\rm\TeX$ and the `np` package are correctly installed, clicking the `"Render"` icon in RStudio should produce output that resembles the following PDF: [workshop.pdf](/www/workshop.pdf)
+
+## Issues
+
+If you succeed at the above, congratulations, but if this does not work for you prior to the workshop please don't worry, as one way or another we will figure it out either before or after the workshop session (i.e., don't stress out if this doesn't work, just do what you can, and as a last resort you have free access to <a href="https://posit.cloud">RStudio Cloud</a>)
+
+::: callout-note
+-   Strictly speaking, you do not have to install RStudio to take advantage of Quarto, though for this workshop you will need to install R, and RStudio will be used throughout (RStudio is an integrated development environment while R is the engine for running R code, so strictly speaking you can avoid using RStudio if you wish)
+
+-   There is a standalone command line interface (CLI) version of Quarto available for the adventurous, say, if you don't want to use RStudio or wish to use, e.g., VS code or some other editor. The beauty of starting with RStudio is that you can get going immediately while other interfaces will require more work and tinkering on your part. 
+
+- See <a href="https://quarto.org/docs/get-started">quarto.org/docs/get-started</a> if a CLI version of Quarto is something that interests you
+:::

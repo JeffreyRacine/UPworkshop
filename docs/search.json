@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nonparametric Workshop in R\nUniversity of Pretoria, South Africa, August 14-18, 2023",
+    "section": "",
+    "text": "In this workshop you will be guided through the application of basic nonparametric kernel methods using R (e.g., kernel regression), and you will also be introduced to recently released tools for conducting reproducible research (Quarto).\nNo background knowledge of either nonparametric analysis or the R programming language will be assumed.\nThe nonparametric methods used in this workshop will be based on Racine (2019).\nThough the workshop will introduce you to the R programming language (What is R?) for conducting nonparametric kernel analysis (What is Kernel Regression?), we will also be using Quarto (What is Quarto?) and RStudio (What is RStudio?) which, combined, form an extremely powerful framework for streamlining a range of tasks (in fact, this website was created using Quarto and RStudio and is hosted on GitHub Pages). All of the software we use is available for free and is open source."
+  },
+  {
+    "objectID": "index.html#test-your-installation",
+    "href": "index.html#test-your-installation",
+    "title": "Nonparametric Workshop in R\nUniversity of Pretoria, South Africa, August 14-18, 2023",
+    "section": "Test Your Installation",
+    "text": "Test Your Installation\nTo test whether or not your install of the above is working prior to the workshop, you might try the following:\n\nDownload the files workshop.qmd and workshop.bib contained in the zip file workshop.zip (see the download link below), place them in a folder, open the file workshop.qmd using the latest version of RStudio, make sure your working directory is set to the source file location (in RStudio, look for the menus at the top of the screen, then select \"Session\" -&gt; \"Set Working Directory\" -&gt; \"To Source File Location\")\n\n\n\n\n\n\n Download workshop.zip\n\n\n\nInstall the np package (using the latest version of RStudio select the \"Packages\" tab, lower right pane by default, click the \"install\" icon, enter np in the \"Packages\" field, the click \"Install\")\nIn the editor pane (upper left pane by default which opens when you opened the file workshop.qmd) click the \"Render\" icon\n\nIf the latest versions of RStudio, R, \\(\\rm\\TeX\\) and the np package are correctly installed, clicking the \"Render\" icon in RStudio should produce output that resembles the following PDF: workshop.pdf"
+  },
+  {
+    "objectID": "index.html#issues",
+    "href": "index.html#issues",
+    "title": "Nonparametric Workshop in R\nUniversity of Pretoria, South Africa, August 14-18, 2023",
+    "section": "Issues",
+    "text": "Issues\nIf you succeed at the above, congratulations, but if this does not work for you prior to the workshop please don’t worry, as one way or another we will figure it out either before or after the workshop session (i.e., don’t stress out if this doesn’t work, just do what you can, and as a last resort you have free access to RStudio Cloud)\n\n\n\n\n\n\nNote\n\n\n\n\nStrictly speaking, you do not have to install RStudio to take advantage of Quarto, though for this workshop you will need to install R, and RStudio will be used throughout (RStudio is an integrated development environment while R is the engine for running R code, so strictly speaking you can avoid using RStudio if you wish)\nThere is a standalone command line interface (CLI) version of Quarto available for the adventurous, say, if you don’t want to use RStudio or wish to use, e.g., VS code or some other editor. The beauty of starting with RStudio is that you can get going immediately while other interfaces will require more work and tinkering on your part.\nSee quarto.org/docs/get-started if a CLI version of Quarto is something that interests you"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website is for participants in the nonparametric workshop being held August 14-18, 2023, at the University of Pretoria, South Africa. Material will be based mostly on Racine (2019). The workshop will be run by Professor Jeffrey S. Racine who currently works at McMaster University in Hamilton, Ontario, Canada.\nYou can contact him at racinej@mcmaster.ca and his professional website can be found at facsocsci.mcmaster.ca/people/racinej"
+  },
+  {
+    "objectID": "about.html#biography",
+    "href": "about.html#biography",
+    "title": "About",
+    "section": "Biography",
+    "text": "Biography\nJeffrey S. Racine (Ph.D. University of Western Ontario, 1989, Aman Ullah, Supervisor) is a Professor in the Department of Economics and a Professor in the Graduate Program in Statistics in the Department of Mathematics and Statistics at McMaster University. He occupies the Senator William McMaster Chair in Econometrics and is a Fellow of the Journal of Econometrics. He has held previous appointments at Syracuse University, the University of South Florida, the University of California San Diego (two-year visiting appointment), and York University.\nHis research interests include nonparametric estimation and inference, shape constrained estimation, cross-validatory model selection, frequentist model averaging, nonparametric instrumental methods, and entropy-based measures of dependence and their statistical underpinnings. He is also interested in parallel distributed computing paradigms and their application to computationally intensive nonparametric estimators.\nHe is currently serving as an Associate Editor for the journal Econometric Reviews.\nHe has co-authored the textbook Nonparametric Econometrics: Theory and Practice (joint with Qi Li, published by Princeton University Press, 2007, with a Chinese translation published in 2015), the monograph Nonparametric Econometrics: A Primer (published by Foundations and Trends in Econometrics, 2008, with a Russian translation published in the journal Quantile in 2008), the textbook Reproducible Econometrics Using R (published by Oxford University Press, 2018), and the textbook An Introduction to the Advanced Theory and Practice of Nonparametric Econometrics: A Replicable Approach Using R (published by Cambridge University Press, 2019). He has published extensively in peer reviewed journals in his field and has co-authored the R packages np and crs that are available on the Comprehensive R Archive Network (CRAN)."
+  }
+]
