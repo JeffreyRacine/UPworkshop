@@ -17,12 +17,16 @@ This website is for participants in the nonparametric workshop being held August
 
 - Day 3
 
-  - AM Introduction to univariate kernel time-series methods, kernel fixed effect panel data methods, forecasting
+  - AM Introduction to univariate kernel time-series methods, kernel volatility, kernel panel data methods
   - PM Hands on lab, R and exercises
 
 - Day 4
 
-  - AM Introduction to semiparametric kernel methods, new tools for reproducible research
+  - AM Introduction to semiparametric kernel methods
   - PM Hands on lab, R and exercises
+  
+- Day 5
+
+  - AM - new tools for reproducible research
 
 
