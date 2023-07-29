@@ -12,6 +12,7 @@ website:
         text: Information
       - topics.qmd
       - about.qmd
+      - lab.qmd
     logo: avatar.png
     tools:
       - icon: github

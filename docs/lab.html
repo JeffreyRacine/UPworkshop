@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>University of Pretoria Workshop - Labs</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./avatar.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">University of Pretoria Workshop</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Information</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./topics.html" rel="" target="">
+ <span class="menu-text">Topics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./lab.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Labs</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools ms-auto-item" href="https://github.com/JeffreyRacine/UPworkshop">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools ms-auto-item" href="https://github.com/JeffreyRacine/UPworkshop/issues">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-to-proceed" id="toc-how-to-proceed" class="nav-link active" data-scroll-target="#how-to-proceed"><span class="header-section-number">1</span> How to proceed</a></li>
+  <li><a href="#preliminaries---reading-datasets-created-by-other-software-programs-into-r" id="toc-preliminaries---reading-datasets-created-by-other-software-programs-into-r" class="nav-link" data-scroll-target="#preliminaries---reading-datasets-created-by-other-software-programs-into-r"><span class="header-section-number">2</span> Preliminaries - reading datasets created by other software programs into <code>R</code></a></li>
+  <li><a href="#preliminaries---nonparametric-estimation-of-density-functions-using-base-r" id="toc-preliminaries---nonparametric-estimation-of-density-functions-using-base-r" class="nav-link" data-scroll-target="#preliminaries---nonparametric-estimation-of-density-functions-using-base-r"><span class="header-section-number">3</span> Preliminaries - nonparametric estimation of density functions using base <code>R</code></a></li>
+  <li><a href="#the-r-package-np-and-working-with-npudens" id="toc-the-r-package-np-and-working-with-npudens" class="nav-link" data-scroll-target="#the-r-package-np-and-working-with-npudens"><span class="header-section-number">4</span> The <code>R</code> package <code>np</code> and working with <code>npudens</code></a></li>
+  <li><a href="#the-r-package-np-and-working-with-the-npksum-function" id="toc-the-r-package-np-and-working-with-the-npksum-function" class="nav-link" data-scroll-target="#the-r-package-np-and-working-with-the-npksum-function"><span class="header-section-number">5</span> The <code>R</code> package <code>np</code> and working with the <code>npksum</code> function</a></li>
+  <li><a href="#the-r-package-np-and-applied-nonparametric-density-estimation" id="toc-the-r-package-np-and-applied-nonparametric-density-estimation" class="nav-link" data-scroll-target="#the-r-package-np-and-applied-nonparametric-density-estimation"><span class="header-section-number">6</span> The <code>R</code> package <code>np</code> and applied nonparametric density estimation</a></li>
+  <li><a href="#the-r-package-np-and-applied-nonparametric-regression" id="toc-the-r-package-np-and-applied-nonparametric-regression" class="nav-link" data-scroll-target="#the-r-package-np-and-applied-nonparametric-regression"><span class="header-section-number">7</span> The <code>R</code> package <code>np</code> and applied nonparametric regression</a></li>
+  <li><a href="#the-r-package-np-and-advanced-use-of-the-npksum-function" id="toc-the-r-package-np-and-advanced-use-of-the-npksum-function" class="nav-link" data-scroll-target="#the-r-package-np-and-advanced-use-of-the-npksum-function"><span class="header-section-number">8</span> The <code>R</code> package <code>np</code> and advanced use of the <code>npksum</code> function</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/JeffreyRacine/UPworkshop/edit/main/lab.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/JeffreyRacine/UPworkshop/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Labs</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/JeffreyRacine/UPworkshop/blob/main/lab.qmd"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="how-to-proceed" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> How to proceed</h1>
+<p>The goal of these labs is to get you up to speed with certain aspects of working with <code>R</code>, presuming of course that you are not already familiar with <code>R</code>, <code>RStudio</code>, and applied nonparametric estimation in general. It is also my sincere hope that these labs will enable you to work with your own data in <code>R</code> as early as even the first lab session, if you choose.</p>
+<p>Note that each <em>chunk</em> of code below can be cut-and-paste into <code>RStudio</code> (or elsewhere) by moving your cursor to the upper right portion of the code chunk then clicking on the <em>clipboard</em> icon (this copies the code to your clipboard and you can then copy it into RStudio using whichever method you are accustomed to).</p>
+<p>These labs complement material presented in the lectures rather than simply repeating what you have already seen. They present an <em>under-the-hood</em> view of capabilities that may not be obvious unless you have spent hours devouring vignettes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and assorted help files. Note that once you have installed the <code>np</code> package then you can view various vignettes as follows:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/unnamed-chunk-1_35af07f1051b9db0b68c07ea48a3461d">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## The vignette below presents an overview of the np package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"np"</span>,<span class="at">package=</span><span class="st">"np"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## The vignette below provides answers to frequently asked questions</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"np_faq"</span>,<span class="at">package=</span><span class="st">"np"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## The vignette below present an overview of entropy-based inference</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="do">## in the np package</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"entropy_np"</span>,<span class="at">package=</span><span class="st">"np"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I expect you to work through these labs at your own pace over the course of this workshop. Also, pull up the lecture slides and try the various examples presented there as well (simple cut-and-paste) as you see fit. Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist.</p>
+</section>
+<section id="preliminaries---reading-datasets-created-by-other-software-programs-into-r" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Preliminaries - reading datasets created by other software programs into <code>R</code></h1>
+<p>One of the nice features of <code>R</code> lies in its ability to work with data stored in binary formats that have been generated by non-<code>R</code> (<code>foreign</code>) software. Furthermore, one can at the same time read data from a URL thereby avoiding having to physically download and store the file locally which in some cases is quite helpful.</p>
+<ul>
+<li><p>The functionality for reading data in a variety of formats is contained in the <code>foreign</code> library.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Load the <code>foreign</code> package and see the help file for <code>read.dta</code> (i.e.&nbsp;type <code>?read.dta</code> after loading the <code>foreign</code> library). You load the foreign library as follows:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_A_98b927949427fd4bdbbdee104987265a">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(foreign)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Having accomplished this, try typing <code>?read.dta</code>.</p></li>
+<li><p>Let’s do two things at once, namely a) read a binary Stata file into <code>R</code> and b) do so from a URL:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_B_26c11f96b938f36fe3ad1453041bb270">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mydat <span class="ot">&lt;-</span> <span class="fu">read.dta</span>(<span class="at">file=</span><span class="st">"http://www.principlesofeconometrics.com/stata/mroz.dta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>You can see the names of the variables in the object <code>mydat</code> along with a summary of one of the variables as follows:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_B_NOEVAL_f83738d392dcb496068c26b23d69fd27">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(mydat)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(wage)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Oops - you have encountered one of the most common mistakes in <code>R</code> - scope is important, so in order to access data in the object <code>mydat</code>, you need to attach it first, so try the following:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_C_81cd73159f67a8ef06a3dd8f7537e07a">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(mydat)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(wage)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>If you currently work with some data stored in the binary format of a non-<code>R</code> software platform (e.g.&nbsp;<code>Stata</code>, <code>SPSS</code>, <code>SAS</code>, <code>Minitab</code>), kindly try to read and attach the data in <code>R</code> right away. It is perhaps most beneficial for you do do this right away since you can then get up to speed with replicating something you are doing on another platform in the <code>R</code> environment.</p></li>
+</ul>
+<p>So, at this stage you ought to be able to read and analyze data in <code>R</code>, an open, free, and extensible platform. And you too are now free, i.e.&nbsp;emancipated, because you no longer have to limit yourself to using a closed, proprietary system for which you are forced to pay for the <em>privilege</em>. You can also, if the need arises, write data in the same (closed) format (see <code>?write.dta</code>). Note from <code>?read.dta</code> and <code>?write.dta</code> that you may only be able to read/write some versions of Stata binary files.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+</section>
+<section id="preliminaries---nonparametric-estimation-of-density-functions-using-base-r" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Preliminaries - nonparametric estimation of density functions using base <code>R</code></h1>
+<p>The questions below make use of a chi-squared random variable with <span class="math inline">\(\nu=5\)</span> degrees of freedom, which we may express as <span class="math display">\[\begin{align*}
+X\sim \chi^2_{5}
+\end{align*}\]</span></p>
+<ul>
+<li><p>What is the mean <span class="math inline">\(E(X)\)</span> and variance <span class="math inline">\(V(X)\)</span> of a <span class="math inline">\(\chi^2\)</span> random variable with <span class="math inline">\(\nu=5\)</span> degrees of freedom?</p></li>
+<li><p>Simulate a sample <span class="math inline">\(X\)</span> of length <span class="math inline">\(10^6\)</span>, and compute the mean and variance of this sample using the following code chunk:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_D_2533e80c5eff9c690224445e40a3f3fc">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rchisq</span>(<span class="dv">10</span><span class="sc">^</span><span class="dv">6</span>,<span class="at">df=</span><span class="dv">5</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+<p>How do the means of the sample match up with your theoretical mean <span class="math inline">\(E(X)\)</span> and variance <span class="math inline">\(V(X)\)</span>? Why do they differ if they do?</p>
+<ul>
+<li><p>Plot the parametric population density function <span class="math inline">\(f(x)\)</span> by generating a sequence <code>x.seq</code> from 0 to 25 then generating the density function using <code>R</code>’s complement of parametric density functions (here we use <code>dchisq()</code>).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_D_NOEVAL_b24e0bfb78608cef450d8d66030fb5cf">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x.seq <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">25</span>,<span class="at">length=</span><span class="dv">100</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>myden <span class="ot">&lt;-</span> <span class="fu">dchisq</span>(x.seq,<span class="at">df=</span><span class="dv">5</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x.seq,myden,<span class="at">type=</span><span class="st">"l"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Using <code>R</code>’s <code>density</code> function, superimpose the nonparametric Rosenblatt-Parzen kernel density on the parametric density above via something like</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_F_c15e7cc8bc632e1c12415e927edbdd14">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x.seq,myden,<span class="at">xlab=</span><span class="st">"x"</span>,<span class="at">ylab=</span><span class="st">"f(x)"</span>,<span class="at">type=</span><span class="st">"l"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">density</span>(x),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>,<span class="fu">c</span>(<span class="st">"Parametric"</span>,<span class="st">"Nonparametric"</span>),<span class="at">col=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">bty=</span><span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>The <code>R</code> function <code>density</code> is an amazing function for Rosenblatt-Parzen kernel density estimation. For one, it is blazingly fast (it relies on a Fast Fourier Transform, and uses <em>plug-in</em> bandwidth selectors, both of which are incredibly fast). But it is also limited to scalar <span class="math inline">\(x\)</span>, does not support <em>categorical</em> kernels, and so forth.</p>
+<p>So, let’s replicate the above using the <strong>n</strong>on<strong>p</strong>arametric <strong>u</strong>nconditional <strong>dens</strong>ity function <code>npudens</code> in the <code>R</code> package <code>np</code>. First you must install the <code>np</code> package via <code>install.packages(np)</code> or via the <code>RStudio</code> install pane, and then load the library via <code>library(np)</code>. Note that if you don’t want screen I/O to be produced by functions in this library, you can disable it with <code>options(np.messages=FALSE)</code>, which will prevent I/O such as <code>Multistart 1 of 1 |</code> from appearing while routines are executing.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_G_256b1292414e402befe19a8a84112fe5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">tdat=</span>x,<span class="at">edat=</span>x.seq,<span class="at">bws=</span><span class="fu">bw.nrd0</span>(x))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x.seq,myden,<span class="at">xlab=</span><span class="st">"x"</span>,<span class="at">ylab=</span><span class="st">"f(x)"</span>,<span class="at">type=</span><span class="st">"l"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(x.seq,<span class="fu">fitted</span>(f),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>,<span class="fu">c</span>(<span class="st">"Parametric"</span>,<span class="st">"Nonparametric"</span>),<span class="at">col=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">bty=</span><span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>(the options <code>tdat</code> and <code>edat</code> are for <em>training</em> and <em>evaluation</em> data - typically we invoke the function via the formula interface which is discussed below - note that <code>bw.nrd0</code> is the default plug in bandwidth selector used by the <code>R</code> function <code>density</code>).</p></li>
+</ul>
+</section>
+<section id="the-r-package-np-and-working-with-npudens" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> The <code>R</code> package <code>np</code> and working with <code>npudens</code></h1>
+<p>Many functions in <code>R</code> support what is known as the <em>formula</em> interface, and <code>npudens</code> is no exception. Furthermore, sometimes it is desirable to separate data-driven methods of bandwidth selection from estimation of the density itself. In the <code>np</code> package, this is accomplished by functions such as <code>npudensbw</code> (which handles bandwidth selection) and <code>npudens</code> (which handles density estimation). The authors of the <code>np</code> package have <em>overloaded</em> (i.e.&nbsp;embedded lots of functionality) and tried to correctly guess intended usage where appropriate.</p>
+<ul>
+<li><p>Here we consider the formula interface and least-squares cross-validation for bandwidth selection, and then feed the bandwidth object <code>bw</code> to the function that computes the density, among other things (i.e.&nbsp;we first invoke <code>npudensbw</code> and then invoke <code>npudens</code>).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_H_7405a97a971192ca6943e99eda13e88c">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rchisq</span>(<span class="dv">1000</span>,<span class="at">df=</span><span class="dv">10</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>x,<span class="at">bwmethod=</span><span class="st">"cv.ls"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bw)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">npudens</span>(bw)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>(the tilde <code>~</code> is part of the <code>R</code> formula interface). In general variables to the left of the tilde are left hand side variables, those to the right are right hand side ones For unconditional density estimation there are no left hand side variables hence the <code>~x</code> formula. For (linear) regression though you might have <code>lm(y~x)</code> or <code>lm(y~x1+x2)</code>, while for nonparametric regression you might have <code>npreg(y~x1+x2)</code>. Take note, however, that while <code>lm(y~x1+x2)</code> imposes a linear additive structure, <code>npreg(y~x1+x2)</code> does not - the use of the formula interface here is simply and solely to list the predictor variables <code>x1</code> and <code>x2</code>).</p></li>
+<li><p>Above we invoked two functions, <code>npudensbw</code> and <code>npudens</code>. We could perform both of these actions in one step (if you don’t provide a bandwidth but do provide the method, <code>npudensbw</code> will be called in the background, and any arguments provided to <code>npudens</code> will be passed along to <code>npudensbw</code>; note the bandwidth object will be stored as <code>f$bws</code>).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_I_44058a6cb934ae88151266f69d8b29a0">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="sc">~</span>x,<span class="at">bwmethod=</span><span class="st">"cv.ls"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f<span class="sc">$</span>bws)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>We might add asymptotic confidence bounds to the plot (<code>plot</code> calls <code>npplot</code> - see <code>?npplot</code> for details).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_J_b709754c2d60ae0c9a35425fd4fcb856">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f,<span class="at">plot.errors.method=</span><span class="st">"asymptotic"</span>,<span class="at">plot.errors.style=</span><span class="st">"band"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>We might also change the kernel function from the default (<code>ckertype="gaussian"</code>) to, say, the epanechnikov (<code>ckertype="epanechnikov"</code>).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_K_2483837e8c1317e47bb43e8d2fe44b9e">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="sc">~</span>x,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bwmethod=</span><span class="st">"cv.ls"</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f<span class="sc">$</span>bws)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>We might wish to change the order of the kernel function from the default (order 2) to, say, order 4 (<code>ckerorder=4</code>).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_L_8aa5a2f084c6b281c0ae8c57f0eab2c8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="sc">~</span>x,<span class="at">ckerorder=</span><span class="dv">4</span>,<span class="at">bwmethod=</span><span class="st">"cv.ls"</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f<span class="sc">$</span>bws)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>We might even try a non-fixed bandwidth such as the adaptive approach.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_M_7ebb7a6a69a8ccc3a719bc16d3181812">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="sc">~</span>x,<span class="at">bwtype=</span><span class="st">"adaptive_nn"</span>,<span class="at">bwmethod=</span><span class="st">"cv.ls"</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f<span class="sc">$</span>bws)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+<p>So, as you can see there are many options we might wish to modify if the occasion arises. See <code>?npudensbw</code> and <code>?npudens</code> for further details, and this is probably a good time to become familiar with the flow of <code>R</code>’s help system.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+</section>
+<section id="the-r-package-np-and-working-with-the-npksum-function" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> The <code>R</code> package <code>np</code> and working with the <code>npksum</code> function</h1>
+<p>Sometimes you may need to compute kernel weighted sums of various objects. The function <code>npksum</code> in the <code>R</code> package <code>np</code> exists to compute kernel sums of various types. It makes calls to compiled C code hence can be fairly fast. Many functions in the <code>np</code> package make calls to this function (or directly to the C code underlying this function). Becoming familiar with this function might be of value if you wish to implement a novel technique that does not exist in any package. By making calls to <code>npksum</code> you can generate efficient estimator prototypes very quickly indeed.</p>
+<ul>
+<li><p>You could use <code>npksum</code> to compute the Rosenblatt-Parzen density estimate above. Let’s do so for a simple illustration, recalling that the density estimate <span class="math inline">\(\hat f(x)\)</span> is given by <span class="math display">\[\begin{equation*}
+\hat f(x)=\frac{1}{nh}\sum_{i=1}^n K((x-X_i)/h).
+\end{equation*}\]</span></p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_N_22c0921b379d19751807a9b1480f1ad9">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">rchisq</span>(n,<span class="at">df=</span><span class="dv">10</span>))</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>h <span class="ot">&lt;-</span> <span class="fu">bw.nrd0</span>(x)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>f.hat <span class="ot">&lt;-</span> <span class="fu">npksum</span>(<span class="sc">~</span>x,<span class="at">bws=</span>h)<span class="sc">$</span>ksum<span class="sc">/</span>(n<span class="sc">*</span>h)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,f.hat,<span class="at">type=</span><span class="st">"l"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>(we sort the data simply so that we can plot the resulting density with a line).</p></li>
+<li><p>You could superimpose the estimate given by the <code>R</code> density function <code>density</code> for comparison purposes (they ought to be identical).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_O_1deaafa89206d84c9b264291a6074a4b">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">rchisq</span>(n,<span class="at">df=</span><span class="dv">10</span>))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>h <span class="ot">&lt;-</span> <span class="fu">bw.nrd0</span>(x)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>f.hat <span class="ot">&lt;-</span> <span class="fu">npksum</span>(<span class="sc">~</span>x,<span class="at">bws=</span>h)<span class="sc">$</span>ksum<span class="sc">/</span>(n<span class="sc">*</span>h)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,f.hat,<span class="at">type=</span><span class="st">"l"</span>)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">density</span>(x),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>You could compute and plot the kernel function if you wished using <code>npksum</code>.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_1_P_3ff0eb672f5ed017cc740df3a472dc08">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Z <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="fu">sqrt</span>(<span class="dv">5</span>),<span class="fu">sqrt</span>(<span class="dv">5</span>),<span class="at">length=</span><span class="dv">100</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Z,<span class="at">ylab=</span><span class="st">"kernel"</span>,<span class="fu">npksum</span>(<span class="at">txdat=</span><span class="dv">0</span>,<span class="at">exdat=</span>Z,<span class="at">bws=</span><span class="dv">1</span>,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>                            <span class="at">ckerorder=</span><span class="dv">2</span>)<span class="sc">$</span>ksum,<span class="at">type=</span><span class="st">"l"</span>,<span class="at">main=</span><span class="st">"Epanechnikov [order = 2]"</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Z,<span class="at">ylab=</span><span class="st">"kernel"</span>,<span class="fu">npksum</span>(<span class="at">txdat=</span><span class="dv">0</span>,<span class="at">exdat=</span>Z,<span class="at">bws=</span><span class="dv">1</span>,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>                            <span class="at">ckerorder=</span><span class="dv">4</span>)<span class="sc">$</span>ksum,<span class="at">type=</span><span class="st">"l"</span>,<span class="at">main=</span><span class="st">"Epanechnikov [order = 4]"</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Z,<span class="at">ylab=</span><span class="st">"kernel"</span>,<span class="fu">npksum</span>(<span class="at">txdat=</span><span class="dv">0</span>,<span class="at">exdat=</span>Z,<span class="at">bws=</span><span class="dv">1</span>,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>                            <span class="at">ckerorder=</span><span class="dv">6</span>)<span class="sc">$</span>ksum,<span class="at">type=</span><span class="st">"l"</span>,<span class="at">main=</span><span class="st">"Epanechnikov [order = 6]"</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Z,<span class="at">ylab=</span><span class="st">"kernel"</span>,<span class="fu">npksum</span>(<span class="at">txdat=</span><span class="dv">0</span>,<span class="at">exdat=</span>Z,<span class="at">bws=</span><span class="dv">1</span>,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>                            <span class="at">ckerorder=</span><span class="dv">8</span>)<span class="sc">$</span>ksum,<span class="at">type=</span><span class="st">"l"</span>,<span class="at">main=</span><span class="st">"Epanechnikov [order = 8]"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+<p>So, there is really no limit to what you might do with <code>npksum</code>. There are many options that could be fed to this function. Check out <code>?npksum</code> for details.</p>
+</section>
+<section id="the-r-package-np-and-applied-nonparametric-density-estimation" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> The <code>R</code> package <code>np</code> and applied nonparametric density estimation</h1>
+<p>We consider a classic dataset <span class="citation" data-cites="PAGAN_ULLAH:1999">(<a href="#ref-PAGAN_ULLAH:1999" role="doc-biblioref">Pagan and Ullah 1999</a>)</span> consisting of a random sample (<span class="math inline">\(n=205\)</span>) taken from the 1971 Canadian Census Public Use Tapes for male individuals having common education (grade 13). You can load the data and <em>attach</em> the variables <code>logwage</code> and <code>age</code> as follows:</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_A_327edb46b5e0bf5263180025c3266f8d">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(np)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(cps71)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(cps71)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="do">## See what is in the dataset</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(cps71)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="do">## For help try</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>?cps71</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Estimate the density for <code>logwage</code> using the Gaussian parametric distribution, describe the Shapiro-Wilk test for normality <span class="citation" data-cites="SHAPIRO_WILK:1965">(<a href="#ref-SHAPIRO_WILK:1965" role="doc-biblioref">Shapiro and Wilk 1965</a>)</span>, i.e.&nbsp;consult the reference at the end of this assignment, also see <code>?shapiro.test(x)</code>), then apply the test to <code>logwage</code> and plot the resulting density estimate. Is the data consistent with this parametric specification?</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_B_75aaef1edf7a6d86f5a8e957cc5a0e34">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(np)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">np.messages=</span><span class="cn">FALSE</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(cps71)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(cps71)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">sort</span>(logwage),<span class="fu">dnorm</span>(<span class="fu">sort</span>(logwage),<span class="at">mean=</span><span class="fu">mean</span>(logwage),<span class="at">sd=</span><span class="fu">sd</span>(logwage)),<span class="at">type=</span><span class="st">"l"</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(logwage)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Compute and plot the kernel density estimator for <code>logwage</code> using an Epanechnikov kernel using the bandwidth 0.1 and again using the bandwidth -0. The following allows you to specify a bandwidth of 0.5, then <em>feed</em> the bandwidth object to the density estimation routine (we keep them separate for a number of reasons)</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_C_33fbe013c843159a3e761b9e903c6a6d">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bws=</span><span class="fl">0.5</span>,<span class="at">bandwidth.compute=</span><span class="cn">FALSE</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_D_25c4e88355c28546a2b4a53da7069b97">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bws=</span><span class="fl">0.1</span>,<span class="at">bandwidth.compute=</span><span class="cn">FALSE</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_E_17feb49ad20382e7fbf62f7def3ae113">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bws=</span><span class="fl">1.0</span>,<span class="at">bandwidth.compute=</span><span class="cn">FALSE</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Repeat the above (i.e.&nbsp;compute and plot) using likelihood cross-validation and least-squares cross-validation. What are the differences between the cross-validated estimates and that based on the ad-hoc bandwidths (i.e.&nbsp;0.1 and 1.0)?</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_F_db4d1d21999b5607b704781dfefd6ac1">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bwmethod=</span><span class="st">"cv.ml"</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_G_8fa8be0767d9441ebad1abdc5d534e4f">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bwmethod=</span><span class="st">"cv.ls"</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Construct and plot the likelihood cross-validated estimate with asymptotic and then bootstrap error bars (see <code>?npplot</code> for help, but you will use <code>plot(foo,plot.errors.method=...)</code> where <code>foo</code> is your model (i.e.&nbsp;fhat above)). How do these error bars differ?</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_H_07e4f2f6a33a38127dab773002676317">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Asymptotic</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bwmethod=</span><span class="st">"cv.ml"</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat,<span class="at">plot.errors.method=</span><span class="st">"asymptotic"</span>,<span class="at">plot.errors.style=</span><span class="st">"band"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_I_f09cecb4e8203276701947deacc59ffd">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Bootstrap</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npudensbw</span>(<span class="sc">~</span>logwage,<span class="at">ckertype=</span><span class="st">"epanechnikov"</span>,<span class="at">bwmethod=</span><span class="st">"cv.ml"</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>fhat <span class="ot">&lt;-</span> <span class="fu">npudens</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fhat,<span class="at">plot.errors.method=</span><span class="st">"bootstrap"</span>,<span class="at">plot.errors.style=</span><span class="st">"band"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+</section>
+<section id="the-r-package-np-and-applied-nonparametric-regression" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> The <code>R</code> package <code>np</code> and applied nonparametric regression</h1>
+<ul>
+<li><p>Estimate a linear and quadratic parametric regression model via</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_J_2916e90039d60db3d8a993d536e8c6a9">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>model.linear <span class="ot">&lt;-</span> <span class="fu">lm</span>(logwage<span class="sc">~</span>age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>and</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_K_5778c8233a14984f38e6879bb169cb39">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>model.quadratic <span class="ot">&lt;-</span> <span class="fu">lm</span>(logwage<span class="sc">~</span>age<span class="sc">+</span><span class="fu">I</span>(age<span class="sc">^</span><span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_L_f8bfaf8439b6a3a6db2379e4a062f5db">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>model.linear <span class="ot">&lt;-</span> <span class="fu">lm</span>(logwage<span class="sc">~</span>age)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model.linear)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>model.quadratic <span class="ot">&lt;-</span> <span class="fu">lm</span>(logwage<span class="sc">~</span>age<span class="sc">+</span><span class="fu">I</span>(age<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model.quadratic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Describe the RESET test <span class="citation" data-cites="RAMSEY:1969">(<a href="#ref-RAMSEY:1969" role="doc-biblioref">Ramsey 1969</a>)</span> for functional form (i.e.&nbsp;consult the reference at the end of this assignment), install the <code>lmtest</code> library in <code>R</code>, and then test each model for correct parametric specification using <code>resettest()</code> and clearly report the outcome from this procedure. Based on this result, would you be comfortable using either of these models for applied work?</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_N_1f3725e7eed3b88eed1248af6b129671">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmtest)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">resettest</span>(model.linear)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">resettest</span>(model.quadratic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Construct a local linear regression estimator for the regression of <code>logwage</code> on <code>age</code> (see <code>?npreg</code> and <code>?npregbw</code> for examples). Plot the resulting estimate and the asymptotic standard errors.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_O_602fadc30b3a74f5e78be15c5f2f8530">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npregbw</span>(logwage<span class="sc">~</span>age,<span class="at">regtype=</span><span class="st">"ll"</span>)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>model.ll <span class="ot">&lt;-</span> <span class="fu">npreg</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model.ll,<span class="at">plot.errors.method=</span><span class="st">"asymptotic"</span>,<span class="at">plot.errors.style=</span><span class="st">"band"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Plot the resulting gradient estimate and its asymptotic standard errors.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_P_34a5bfd6dab8372f81971cca63c09db1">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npregbw</span>(logwage<span class="sc">~</span>age,<span class="at">regtype=</span><span class="st">"ll"</span>)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>model.ll <span class="ot">&lt;-</span> <span class="fu">npreg</span>(<span class="at">bws=</span>bw)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model.ll,<span class="at">plot.errors.method=</span><span class="st">"asymptotic"</span>,<span class="at">plot.errors.style=</span><span class="st">"band"</span>,<span class="at">gradients=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Compare your estimates with that from the quadratic parametric model in a plot (the generic <code>R</code> function <code>fitted()</code> extracts fitted values from a model).</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_Q_3597662fe50d21af9b8ac44bb2da5af0">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(age,logwage,<span class="at">main=</span><span class="st">"Quadratic Earnings Profile"</span>,<span class="at">xlab=</span><span class="st">"Age"</span>,<span class="at">ylab=</span><span class="st">"log(Wage)"</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age,<span class="fu">fitted</span>(model.quadratic),<span class="at">col=</span><span class="dv">1</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age,<span class="fu">fitted</span>(model.ll),<span class="at">col=</span><span class="dv">2</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="fu">min</span>(age),<span class="fu">max</span>(logwage),<span class="fu">c</span>(<span class="st">"Quadratic"</span>,<span class="st">"Kernel"</span>),<span class="at">col=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>What is the in-sample fit (<span class="math inline">\(R^2\)</span>) of the parametric and nonparametric models? On the basis of this criterion function, which model would you be most comfortable using? What are the drawbacks of using <span class="math inline">\(R^2\)</span> as a guide to model selection?</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_R_294da5db8872aabfedc6df995e2a504d">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model.quadratic)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model.ll)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Often we wish to compute predictions or construct <em>counter-factuals</em> during the course of applied nonparametric regression. In <code>R</code> there is a generic function <code>predict()</code> that allows one to do this. You create an <em>evaluation</em> dataset then use the option <code>predict(...,newdata=...)</code> to generate the predictions. Let’s load Woodridge’s <code>wage1</code> dataset then consider local constant estimation with two predictors, one continuous and one categorical. Note that one must exercise caution when creating the evaluation data, particularly when categorical predictors are involved.</p>
+<p>See also the generic functions <code>residuals()</code> and <code>fitted()</code>.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_T_a15f352e17c2a02562fe92205f18d961">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(wage1)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(wage1)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Construct the parametric model</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>model.lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(lwage<span class="sc">~</span>exper<span class="sc">+</span>female)</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Construct the nonparametric model</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>model.lc <span class="ot">&lt;-</span> <span class="fu">npreg</span>(lwage<span class="sc">~</span>exper<span class="sc">+</span>female)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Create an evaluation dataset (counter-factual) for a female</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="do">## with 5 years of experience</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>evaldata.female <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">exper=</span><span class="dv">5</span>,</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>                              <span class="at">female=</span><span class="fu">factor</span>(<span class="st">"Female"</span>,<span class="at">levels=</span><span class="fu">levels</span>(female)))</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a><span class="do">## Use the generic R function predict(...,newdata=...)</span></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model.lm,<span class="at">newdata=</span>evaldata.female)</span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model.lc,<span class="at">newdata=</span>evaldata.female)</span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a><span class="do">## Create an evaluation dataset (counter-factual) for a male</span></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a><span class="do">## with 5 years of experience</span></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a>evaldata.male <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">exper=</span><span class="dv">5</span>,</span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>                            <span class="at">female=</span><span class="fu">factor</span>(<span class="st">"Male"</span>,<span class="at">levels=</span><span class="fu">levels</span>(female)))</span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a><span class="do">## Use the generic R function predict(...,newdata=...)</span></span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model.lm,<span class="at">newdata=</span>evaldata.male)</span>
+<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model.lc,<span class="at">newdata=</span>evaldata.male)</span>
+<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a><span class="do">## We could compute Oaxaca-Blinder estimates of wage differentials</span></span>
+<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a><span class="do">## Parametric wage differential (for Oaxaca-Blinder you would use</span></span>
+<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a><span class="do">## the e.g. mean values of the female predictors which you could</span></span>
+<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a><span class="do">## implement on your own)</span></span>
+<span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model.lm,<span class="at">newdata=</span>evaldata.female)<span class="sc">-</span><span class="fu">predict</span>(model.lm,<span class="at">newdata=</span>evaldata.male)</span>
+<span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a><span class="do">## Nonparametric wage differential</span></span>
+<span id="cb36-29"><a href="#cb36-29" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model.lc,<span class="at">newdata=</span>evaldata.female)<span class="sc">-</span><span class="fu">predict</span>(model.lc,<span class="at">newdata=</span>evaldata.male)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+</section>
+<section id="the-r-package-np-and-advanced-use-of-the-npksum-function" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> The <code>R</code> package <code>np</code> and advanced use of the <code>npksum</code> function</h1>
+<p>Sometimes you may need to compute kernel weighted sums of various objects. The function <code>npksum</code> in the <code>R</code> package <code>np</code> exists to compute kernel sums of various types. It makes calls to compiled C code hence can be fairly fast. Many functions in the <code>np</code> package make calls to this function (or directly to the C code underlying this function). Becoming familiar with this function might be of value if you wish to implement a novel technique that does not exist in any package. By making calls to <code>npksum</code> you can generate efficient prototypes very quickly indeed.</p>
+<ul>
+<li><p>You could use <code>npksum</code> to compute the Nadaraya-Watson regression estimator used above, <span class="math display">\[\begin{equation*}
+    \hat g(x) =\frac{\sum_{i=1}^n Y_i K_\gamma(X_i,x)}
+    {\sum_{i=1}^n K_\gamma(X_i,x)}.
+  \end{equation*}\]</span> Compute the local constant estimator using the <code>npksum</code> function for the <code>cps71</code> data.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_U_212651b0aa44cedda45e74574c06d19d">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(cps71)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(cps71)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Compute the bandwidths using npregbw()</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npregbw</span>(<span class="at">xdat=</span>age, <span class="at">ydat=</span>logwage)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Compute the fit using npksum</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>fit.lc <span class="ot">&lt;-</span> <span class="fu">npksum</span>(<span class="at">txdat=</span>age, <span class="at">tydat=</span>logwage, <span class="at">bws=</span>bw<span class="sc">$</span>bw)<span class="sc">$</span>ksum<span class="sc">/</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>          <span class="fu">npksum</span>(<span class="at">txdat=</span>age, <span class="at">bws=</span>bw<span class="sc">$</span>bw)<span class="sc">$</span>ksum</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Plot the results</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(age, logwage, <span class="at">xlab=</span><span class="st">"Age"</span>, <span class="at">ylab=</span><span class="st">"log(wage)"</span>)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, fit.lc)</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Compare results with npreg() for the first 10 observations</span></span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a><span class="fu">cbind</span>(fit.lc,<span class="fu">fitted</span>(<span class="fu">npreg</span>(<span class="at">bws=</span>bw)))[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Often we also need to implement some form of data-driven bandwidth selection, such as for the local constant estimator defined using the <code>npksum</code> function outlined above. If we wanted to implement least-squares cross-validation for the Nadaraya-Watson estimator, this can be accomplished via <code>npksum</code> using the option <code>leave.one.out=TRUE</code>. Below we consider a simulated example with <span class="math inline">\(q=3\)</span> continuous predictors. Minimization will rely on the R function <code>nlm()</code>.</p>
+<div class="cell" data-layout-align="center" data-hash="lab_cache/html/LAB_2_V_b7dcd6f3be4166ee524d65ec83862c83">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="do">## We conduct least-squares cross-validation for the local-constant</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="do">## regression estimator. We first write an R function `ss' that</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="do">## computes the leave-one-out sum of squares using the npksum()</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="do">## function, and then feed this function, along with random starting</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="do">## values for the bandwidth vector, to the nlm() routine in R (nlm =</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Non-Linear Minimization). Finally, we compare results with the</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="do">## function npregbw() that is written solely in C and calls a tightly</span></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="do">## coupled C-level search routine.  Note that one could make repeated</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="do">## calls to nlm() using different starting values for h (highly</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="do">## recommended in general).</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a><span class="do">## Increase the number of digits printed out by default in R and avoid</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a><span class="do">## using scientific notation for this example (we wish to compare</span></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a><span class="do">## objective function minima)</span></span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen=</span><span class="dv">100</span>, <span class="at">digits=</span><span class="dv">12</span>)</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a><span class="do">## Generate 100 observations from a simple DGP where one explanatory</span></span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a><span class="do">## variable is irrelevant.</span></span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fu">runif</span>(n)</span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>x3 <span class="ot">&lt;-</span> <span class="fu">runif</span>(n)</span>
+<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a><span class="do">## Create a data-frame for the predictors</span></span>
+<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>txdat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x1, x2, x3)</span>
+<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a><span class="do">## Note - x3 is irrelevant</span></span>
+<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a>tydat <span class="ot">&lt;-</span> x1 <span class="sc">+</span> <span class="fu">sin</span>(x2) <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-29"><a href="#cb38-29" aria-hidden="true" tabindex="-1"></a><span class="do">## Write an R function that returns the average leave-one-out sum of</span></span>
+<span id="cb38-30"><a href="#cb38-30" aria-hidden="true" tabindex="-1"></a><span class="do">## squared residuals for the local constant estimator based upon</span></span>
+<span id="cb38-31"><a href="#cb38-31" aria-hidden="true" tabindex="-1"></a><span class="do">## npksum(). This function accepts one argument and presumes that</span></span>
+<span id="cb38-32"><a href="#cb38-32" aria-hidden="true" tabindex="-1"></a><span class="do">## txdat and tydat have been defined already.</span></span>
+<span id="cb38-33"><a href="#cb38-33" aria-hidden="true" tabindex="-1"></a>ss <span class="ot">&lt;-</span> <span class="cf">function</span>(h) {</span>
+<span id="cb38-34"><a href="#cb38-34" aria-hidden="true" tabindex="-1"></a><span class="do">## Test for valid (non-negative) bandwidths - return infinite penalty</span></span>
+<span id="cb38-35"><a href="#cb38-35" aria-hidden="true" tabindex="-1"></a><span class="do">## when this occurs</span></span>
+<span id="cb38-36"><a href="#cb38-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-37"><a href="#cb38-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">min</span>(h)<span class="sc">&lt;=</span><span class="dv">0</span>) {</span>
+<span id="cb38-38"><a href="#cb38-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-39"><a href="#cb38-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(.Machine<span class="sc">$</span>double.xmax)</span>
+<span id="cb38-40"><a href="#cb38-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-41"><a href="#cb38-41" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb38-42"><a href="#cb38-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-43"><a href="#cb38-43" aria-hidden="true" tabindex="-1"></a>      mean.loo <span class="ot">&lt;-</span>  <span class="fu">npksum</span>(txdat,</span>
+<span id="cb38-44"><a href="#cb38-44" aria-hidden="true" tabindex="-1"></a>                          tydat,</span>
+<span id="cb38-45"><a href="#cb38-45" aria-hidden="true" tabindex="-1"></a>                          <span class="at">leave.one.out=</span><span class="cn">TRUE</span>,</span>
+<span id="cb38-46"><a href="#cb38-46" aria-hidden="true" tabindex="-1"></a>                          <span class="at">bws=</span>h)<span class="sc">$</span>ksum<span class="sc">/</span></span>
+<span id="cb38-47"><a href="#cb38-47" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">npksum</span>(txdat,</span>
+<span id="cb38-48"><a href="#cb38-48" aria-hidden="true" tabindex="-1"></a>                          <span class="at">leave.one.out=</span><span class="cn">TRUE</span>,</span>
+<span id="cb38-49"><a href="#cb38-49" aria-hidden="true" tabindex="-1"></a>                          <span class="at">bws=</span>h)<span class="sc">$</span>ksum</span>
+<span id="cb38-50"><a href="#cb38-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-51"><a href="#cb38-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">mean</span>((tydat<span class="sc">-</span>mean.loo)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb38-52"><a href="#cb38-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-53"><a href="#cb38-53" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb38-54"><a href="#cb38-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-55"><a href="#cb38-55" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb38-56"><a href="#cb38-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-57"><a href="#cb38-57" aria-hidden="true" tabindex="-1"></a><span class="do">## Now pass this function to R's nlm() routine along with random starting</span></span>
+<span id="cb38-58"><a href="#cb38-58" aria-hidden="true" tabindex="-1"></a><span class="do">## values and place results in `nlm.return'.</span></span>
+<span id="cb38-59"><a href="#cb38-59" aria-hidden="true" tabindex="-1"></a>nlm.return <span class="ot">&lt;-</span> <span class="fu">nlm</span>(ss, <span class="fu">runif</span>(<span class="fu">NCOL</span>(txdat)))</span>
+<span id="cb38-60"><a href="#cb38-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-61"><a href="#cb38-61" aria-hidden="true" tabindex="-1"></a><span class="do">## Now compute the bandwidths using the np function</span></span>
+<span id="cb38-62"><a href="#cb38-62" aria-hidden="true" tabindex="-1"></a><span class="do">## npregbw.</span></span>
+<span id="cb38-63"><a href="#cb38-63" aria-hidden="true" tabindex="-1"></a>bw <span class="ot">&lt;-</span> <span class="fu">npregbw</span>(<span class="at">xdat=</span>txdat, <span class="at">ydat=</span>tydat)</span>
+<span id="cb38-64"><a href="#cb38-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-65"><a href="#cb38-65" aria-hidden="true" tabindex="-1"></a><span class="do">## Bandwidths from nlm()</span></span>
+<span id="cb38-66"><a href="#cb38-66" aria-hidden="true" tabindex="-1"></a>nlm.return<span class="sc">$</span>estimate</span>
+<span id="cb38-67"><a href="#cb38-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-68"><a href="#cb38-68" aria-hidden="true" tabindex="-1"></a><span class="do">## Bandwidths from npregbw()</span></span>
+<span id="cb38-69"><a href="#cb38-69" aria-hidden="true" tabindex="-1"></a>bw<span class="sc">$</span>bw</span>
+<span id="cb38-70"><a href="#cb38-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-71"><a href="#cb38-71" aria-hidden="true" tabindex="-1"></a><span class="do">## Least-squares objective function value (minimum) from nlm()</span></span>
+<span id="cb38-72"><a href="#cb38-72" aria-hidden="true" tabindex="-1"></a>nlm.return<span class="sc">$</span>minimum</span>
+<span id="cb38-73"><a href="#cb38-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-74"><a href="#cb38-74" aria-hidden="true" tabindex="-1"></a><span class="do">## Least-squares objective function value (minimum) from npregbw()</span></span>
+<span id="cb38-75"><a href="#cb38-75" aria-hidden="true" tabindex="-1"></a>bw<span class="sc">$</span>fval</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+</section>
+<section id="references" class="level1 unnumbered">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-PAGAN_ULLAH:1999" class="csl-entry" role="listitem">
+Pagan, A., and A. Ullah. 1999. <em>Nonparametric Econometrics</em>. Cambridge University Press.
+</div>
+<div id="ref-RAMSEY:1969" class="csl-entry" role="listitem">
+Ramsey, J. B. 1969. <span>“Tests for Specification Error in Classical Linear Least Squares Regression Analysis.”</span> <em>Journal of the Royal Statistical Society, Series B</em> 31: 350–71.
+</div>
+<div id="ref-SHAPIRO_WILK:1965" class="csl-entry" role="listitem">
+Shapiro, S. S., and M. B. Wilk. 1965. <span>“An Analysis of Variance Test for Normality (Complete Samples).”</span> <em>Biometrika</em> 52 (3/4): 591–611.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Function documentation is great if you know the name of the function you need, but it’s useless otherwise. An <code>R</code> vignette is a long-form guide to an <code>R</code> package written to provide a more complete picture of the package and its use.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The <code>foreign</code> library is part of base <code>R</code> so does not require separate installation, unlike other packages we might wish to use.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>For some bizarre reason, certain closed proprietary systems seem to continuously change the structure of their binary read/write calls - perhaps this is to encourage (read <em>force</em>) users to update? But you ought to be able to save your Stata file in an earlier format within Stata and get around such planned obsolescence.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The flow of these help pages is Description/Usage/Arguments/Details/Value/Usage Issues/Examples. So, you can always find <em>Examples</em> at the end of a help page, can find out what values a function returns in <em>Value</em>, etc.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
