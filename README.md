@@ -5,3 +5,6 @@ This repository contains the Quarto website created for the *Nonparametric Works
 This site can be accessed via <https://jeffreyracine.github.io/UPworkshop>
 
 The GitHub repository for this project is <https://github.com/JeffreyRacine/UPworkshop> (you are here!)
+
+The zipfile with the example referred to on the website is located in
+the folder docs/www/
