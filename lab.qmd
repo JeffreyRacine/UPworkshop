@@ -54,7 +54,7 @@ vignette("np_faq",package="np")
 vignette("entropy_np",package="np")
 ```
 
-I expect you to work through these labs at your own pace over the course of this workshop. Also, pull up the lecture slides and try the various examples presented there as well (simple cut-and-paste) as you see fit. Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist.
+I expect you to work through these labs at your own pace over the course of this workshop. Also, pull up the lecture slides and try the various examples presented there as well as you see fit. Follow your curiousity and poke around! Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist.
 
 # Preliminaries - reading datasets created by other software programs into `R`
 
@@ -139,6 +139,10 @@ How do the means of the sample match up with your theoretical mean $E(X)$ and va
   So, let's replicate the above using the **n**on**p**arametric **u**nconditional **dens**ity function `npudens` in the `R` package `np`. First you must install the `np` package via `install.packages(np)` or via the `RStudio` install pane, and then load the library via `library(np)`. Note that if you don't want screen I/O to be produced by functions in this library, you can disable it with `options(np.messages=FALSE)`, which will prevent I/O such as `Multistart 1 of 1 |` from appearing while routines are executing.
 
   ```{r LAB_1_G}
+  ## Note that you have to load the np package in order to execute e.g.,
+  ## npudens(), npudensbw(), npreg() etc. (I may presume you will have loaded it
+  ## already for some of the code chunks that follow).
+  library(np)
   f <- npudens(tdat=x,edat=x.seq,bws=bw.nrd0(x))
   plot(x.seq,myden,xlab="x",ylab="f(x)",type="l")
   lines(x.seq,fitted(f),col=2,lty=2)
@@ -241,7 +245,7 @@ Sometimes you may need to compute kernel weighted sums of various objects. The f
   lines(density(x),col=2,lty=2)
   ```
 
-- You could compute and plot the kernel function if you wished using `npksum`.
+- You could compute and plot the kernel function if you wished using `npksum` (here we consider the Epanechnikov kernel of orders 2 [default], 4, 6, and 8).
 
   ```{r LAB_1_P}
   Z <- seq(-sqrt(5),sqrt(5),length=100)
@@ -256,7 +260,7 @@ Sometimes you may need to compute kernel weighted sums of various objects. The f
                               ckerorder=8)$ksum,type="l",main="Epanechnikov [order = 8]")
   ```
 
-So, there is really no limit to what you might do with `npksum`. There are many options that could be fed to this function. Check out `?npksum` for details.
+So, there is really no limit to what you might do with `npksum`. There are many options that could be fed to this function. Check out `?npksum` for details, and scroll through the numerous examples for illustrations of its capabilities (it can save you tons of programming if you wish to prototype a new kernel-based approach).
 
 
 # The `R` package `np` and applied nonparametric density estimation
