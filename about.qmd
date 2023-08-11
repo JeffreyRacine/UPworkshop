@@ -5,7 +5,7 @@ bibliography: workshop.bib
 
 This website is for participants in the nonparametric workshop being held August 14-18, 2023, at the University of Pretoria, South Africa. Material will be based mostly on @racine_2019. The workshop will be run by Professor Jeffrey S. Racine who currently works at McMaster University in Hamilton, Ontario, Canada.
 
-You can contact him at <a href="mailto:racinej@mcmaster.ca">racinej\@mcmaster.ca</a> and his professional website can be found at <a href="https://facsocsci.mcmaster.ca/people/racinej">facsocsci.mcmaster.ca/people/racinej</a>
+You can contact him at <a href="mailto:racinej@mcmaster.ca">racinej\@mcmaster.ca</a> and his professional website can be found at <a href="https://experts.mcmaster.ca/display/racinej">experts.mcmaster.ca/display/racinej</a>
 
 ## Biography
 
