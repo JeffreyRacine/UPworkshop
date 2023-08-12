@@ -11,7 +11,7 @@ website:
       - href: index.qmd
         text: Information
       - topics.qmd
-#      - lab.qmd
+      - lab.qmd
       - about.qmd      
     logo: avatar.png
     tools:

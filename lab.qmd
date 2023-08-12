@@ -54,7 +54,7 @@ vignette("np_faq",package="np")
 vignette("entropy_np",package="np")
 ```
 
-I expect you to work through these labs at your own pace over the course of this workshop. Also, pull up the lecture slides and try the various examples presented there as well as you see fit. Follow your curiosity and poke around! Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist.
+I expect you to work through these labs at your own pace over the course of this five-day workshop. Also, pull up the lecture slides and try the various examples presented there as well as you see fit. Follow your curiosity and poke around! Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist.
 
 # Preliminaries - reading datasets created by other software programs into `R`
 
