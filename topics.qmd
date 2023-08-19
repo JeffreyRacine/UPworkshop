@@ -12,7 +12,7 @@ This website is for participants in the nonparametric workshop being held August
 
 - Day 2
 
-  - AM Introduction nonparametric kernel regression, estimation, inference, interpretation
+  - AM Introduction to nonparametric kernel regression, estimation, inference, interpretation
   - PM Hands on lab, R and exercises
 
 - Day 3
@@ -27,6 +27,6 @@ This website is for participants in the nonparametric workshop being held August
   
 - Day 5
 
-  - AM Assessing parametric vs. semiparametric vs. nonparametric models, new tools for reproducible research
+  - AM Introduction to assessing parametric vs. semiparametric vs. nonparametric models, new tools for reproducible research
 
 
