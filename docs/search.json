@@ -14,6 +14,34 @@
     "text": "Biography\nJeffrey S. Racine (Ph.D. University of Western Ontario, 1989, Aman Ullah, Supervisor) is a Professor in the Department of Economics and a Professor in the Graduate Program in Statistics in the Department of Mathematics and Statistics at McMaster University. He occupies the Senator William McMaster Chair in Econometrics and is a Fellow of the Journal of Econometrics. He has held previous appointments at Syracuse University, the University of South Florida, the University of California San Diego (two-year visiting appointment), and York University.\nHis research interests include nonparametric estimation and inference, shape constrained estimation, cross-validatory model selection, frequentist model averaging, nonparametric instrumental methods, and entropy-based measures of dependence and their statistical underpinnings. He is also interested in parallel distributed computing paradigms and their application to computationally intensive nonparametric estimators.\nHe is currently serving as an Associate Editor for the journal Econometric Reviews.\nHe has co-authored the textbook Nonparametric Econometrics: Theory and Practice (joint with Qi Li, published by Princeton University Press, 2007, with a Chinese translation published in 2015), the monograph Nonparametric Econometrics: A Primer (published by Foundations and Trends in Econometrics, 2008, with a Russian translation published in the journal Quantile in 2008), the textbook Reproducible Econometrics Using R (published by Oxford University Press, 2018), and the textbook An Introduction to the Advanced Theory and Practice of Nonparametric Econometrics: A Replicable Approach Using R (published by Cambridge University Press, 2019). He has published extensively in peer reviewed journals in his field and has co-authored the R packages np and crs that are available on the Comprehensive R Archive Network (CRAN)."
   },
   {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Photo Gallery",
+    "section": "",
+    "text": "Some photos from the workshop for your viewing amusement."
+  },
+  {
+    "objectID": "lab.html",
+    "href": "lab.html",
+    "title": "Labs",
+    "section": "",
+    "text": "The goal of these labs is to get you up to speed with certain aspects of working with R, presuming of course that you are not already familiar with R, RStudio, and applied nonparametric estimation in general. It is also my sincere hope that these labs will enable you to work with your own data in R as early as even the first lab session, if you choose.\nNote that each chunk of code below can be cut-and-paste into RStudio (or elsewhere) by moving your cursor to the upper right portion of the code chunk then clicking on the clipboard icon (this copies the code to your clipboard and you can then copy it into RStudio using whichever method you are accustomed to).\nThese labs complement material presented in the lectures rather than simply repeating what you have already seen. They present an under-the-hood view of capabilities that may not be obvious unless you have spent hours devouring vignettes1 and assorted help files. Note that once you have installed the np package then you can view various vignettes as follows:\n\n## The vignette below presents an overview of the np package\nvignette(\"np\",package=\"np\")\n## The vignette below provides answers to frequently asked questions\nvignette(\"np_faq\",package=\"np\")\n## The vignette below present an overview of entropy-based inference\n## in the np package\nvignette(\"entropy_np\",package=\"np\")\n\nI expect you to work through these labs at your own pace over the course of this five-day workshop. Also, pull up the lecture slides and try the various examples presented there as well as you see fit. Follow your curiosity and poke around! Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist."
+  },
+  {
+    "objectID": "lab.html#footnotes",
+    "href": "lab.html#footnotes",
+    "title": "Labs",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFunction documentation is great if you know the name of the function you need, but it’s useless otherwise. An R vignette is a long-form guide to an R package written to provide a more complete picture of the package and its use.↩︎\nThe foreign library is part of base R so does not require separate installation, unlike other packages we might wish to use.↩︎\nFor some bizarre reason, certain closed proprietary systems seem to continuously change the structure of their binary read/write calls - perhaps this is to encourage (read force) users to update? But you ought to be able to save your Stata file in an earlier format within Stata and get around such planned obsolescence.↩︎\nThe flow of these help pages is Description/Usage/Arguments/Details/Value/Usage Issues/Examples. So, you can always find Examples at the end of a help page, can find out what values a function returns in Value, etc.↩︎"
+  },
+  {
+    "objectID": "topics.html",
+    "href": "topics.html",
+    "title": "Topics",
+    "section": "",
+    "text": "This website is for participants in the nonparametric workshop being held August 14-18, 2023, at the University of Pretoria, South Africa. Material will be based mostly on Racine (2019). The workshop will be run by Professor Jeffrey S. Racine who currently works at McMaster University in Hamilton, Ontario, Canada.\n\nDay 1\n\nAM Introduction to R, data types, parametric and nonparametric kernel density estimation\nPM Hands on lab, R and exercises\n\nDay 2\n\nAM Introduction nonparametric kernel regression, estimation, inference, interpretation\nPM Hands on lab, R and exercises\n\nDay 3\n\nAM Introduction to univariate kernel time-series methods, kernel volatility, kernel panel data methods\nPM Hands on lab, R and exercises\n\nDay 4\n\nAM Introduction to semiparametric kernel methods\nPM Hands on lab, R and exercises\n\nDay 5\n\nAM - new tools for reproducible research\n\n\n\n\n\n\nReferences\n\nRacine, Jeffrey S. 2019. An Introduction to the Advanced Theory and Practice of Nonparametric Econometrics: A Replicable Approach Using R. Cambridge University Press. https://doi.org/10.1017/9781108649841."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Nonparametric Workshop in R\nUniversity of Pretoria, South Africa, August 14-18, 2023",
@@ -33,26 +61,5 @@
     "title": "Nonparametric Workshop in R\nUniversity of Pretoria, South Africa, August 14-18, 2023",
     "section": "Issues",
     "text": "Issues\nIf you succeed at the above, congratulations, but if this does not work for you prior to the workshop please don’t worry, as one way or another we will figure it out either before or after the workshop session (i.e., don’t stress out if this doesn’t work, just do what you can, and as a last resort you have free access to RStudio Cloud)\n\n\n\n\n\n\nNote\n\n\n\n\nStrictly speaking, you do not have to install RStudio to take advantage of Quarto, though for this workshop you will need to install R, and RStudio will be used throughout (RStudio is an integrated development environment while R is the engine for running R code, so strictly speaking you can avoid using RStudio if you wish)\nThere is a standalone command line interface (CLI) version of Quarto available for the adventurous, say, if you don’t want to use RStudio or wish to use, e.g., VS code or some other editor. The beauty of starting with RStudio is that you can get going immediately while other interfaces will require more work and tinkering on your part.\nSee quarto.org/docs/get-started if a CLI version of Quarto is something that interests you"
-  },
-  {
-    "objectID": "topics.html",
-    "href": "topics.html",
-    "title": "Topics",
-    "section": "",
-    "text": "This website is for participants in the nonparametric workshop being held August 14-18, 2023, at the University of Pretoria, South Africa. Material will be based mostly on Racine (2019). The workshop will be run by Professor Jeffrey S. Racine who currently works at McMaster University in Hamilton, Ontario, Canada.\n\nDay 1\n\nAM Introduction to R, data types, parametric and nonparametric kernel density estimation\nPM Hands on lab, R and exercises\n\nDay 2\n\nAM Introduction nonparametric kernel regression, estimation, inference, interpretation\nPM Hands on lab, R and exercises\n\nDay 3\n\nAM Introduction to univariate kernel time-series methods, kernel volatility, kernel panel data methods\nPM Hands on lab, R and exercises\n\nDay 4\n\nAM Introduction to semiparametric kernel methods\nPM Hands on lab, R and exercises\n\nDay 5\n\nAM - new tools for reproducible research\n\n\n\n\n\n\nReferences\n\nRacine, Jeffrey S. 2019. An Introduction to the Advanced Theory and Practice of Nonparametric Econometrics: A Replicable Approach Using R. Cambridge University Press. https://doi.org/10.1017/9781108649841."
-  },
-  {
-    "objectID": "lab.html",
-    "href": "lab.html",
-    "title": "Labs",
-    "section": "",
-    "text": "The goal of these labs is to get you up to speed with certain aspects of working with R, presuming of course that you are not already familiar with R, RStudio, and applied nonparametric estimation in general. It is also my sincere hope that these labs will enable you to work with your own data in R as early as even the first lab session, if you choose.\nNote that each chunk of code below can be cut-and-paste into RStudio (or elsewhere) by moving your cursor to the upper right portion of the code chunk then clicking on the clipboard icon (this copies the code to your clipboard and you can then copy it into RStudio using whichever method you are accustomed to).\nThese labs complement material presented in the lectures rather than simply repeating what you have already seen. They present an under-the-hood view of capabilities that may not be obvious unless you have spent hours devouring vignettes1 and assorted help files. Note that once you have installed the np package then you can view various vignettes as follows:\n\n## The vignette below presents an overview of the np package\nvignette(\"np\",package=\"np\")\n## The vignette below provides answers to frequently asked questions\nvignette(\"np_faq\",package=\"np\")\n## The vignette below present an overview of entropy-based inference\n## in the np package\nvignette(\"entropy_np\",package=\"np\")\n\nI expect you to work through these labs at your own pace over the course of this five-day workshop. Also, pull up the lecture slides and try the various examples presented there as well as you see fit. Follow your curiosity and poke around! Read through the various help files and vignettes, and of course use me as a resource while I am physically present! Please do not hesitate to ask me anything whatsoever, and I will do my utmost to try to assist."
-  },
-  {
-    "objectID": "lab.html#footnotes",
-    "href": "lab.html#footnotes",
-    "title": "Labs",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFunction documentation is great if you know the name of the function you need, but it’s useless otherwise. An R vignette is a long-form guide to an R package written to provide a more complete picture of the package and its use.↩︎\nThe foreign library is part of base R so does not require separate installation, unlike other packages we might wish to use.↩︎\nFor some bizarre reason, certain closed proprietary systems seem to continuously change the structure of their binary read/write calls - perhaps this is to encourage (read force) users to update? But you ought to be able to save your Stata file in an earlier format within Stata and get around such planned obsolescence.↩︎\nThe flow of these help pages is Description/Usage/Arguments/Details/Value/Usage Issues/Examples. So, you can always find Examples at the end of a help page, can find out what values a function returns in Value, etc.↩︎"
   }
 ]
