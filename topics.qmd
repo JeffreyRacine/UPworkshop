@@ -22,7 +22,7 @@ This website is for participants in the nonparametric workshop being held August
 
 - Day 4
 
-  - AM Introduction to semiparametric kernel methods
+  - AM Introduction to semiparametric kernel methods, assessing parametric/semiparametric/nonparametric models
   - PM Hands on lab, R and exercises
   
 - Day 5
