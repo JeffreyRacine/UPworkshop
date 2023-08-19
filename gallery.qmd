@@ -1,0 +1,17 @@
+---
+title: "Photo Gallery"
+---
+
+Some photos from the workshop for your viewing amusement.
+
+![](www/class_photo.png)
+
+![](www/IMG_0081.png)
+
+![](www/IMG_0082.png)
+
+![](www/IMG_0084.png)
+
+![](www/IMG_0085.png)
+
+![](www/IMG_0086.png)
