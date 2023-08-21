@@ -69,3 +69,11 @@ If you succeed at the above, congratulations, but if this does not work for you 
 
 - See <a href="https://quarto.org/docs/get-started">quarto.org/docs/get-started</a> if a CLI version of Quarto is something that interests you
 :::
+
+## Illustrations, Examples, etc.
+
+The "Gallery of Code" website (<a href="https://jeffreyracine.github.io/gallery">jeffreyracine.github.io/gallery</a>) is intended to provide those interested in semi- and nonparametric methods with illustrative examples that go far beyond what we could possibly cover in the time allotted for this workshop. I hope you find something of interest in the gallery.
+
+## Additional Resources, Books etc.
+
+Additional resources (solutions manuals, code to accompany books, monographs, etc.) can be found at <a href="https://jeffreyracine.github.io/research">jeffreyracine.github.io/research</a>.
